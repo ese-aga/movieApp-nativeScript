@@ -1,0 +1,16 @@
+<ActionBar title="Ese Movie Rater App">
+    <NavigationButton visibility="collapsed"></NavigationButton>
+    <ActionItem icon="font://&#xf2f5;" class="fas h2" ios.position="right" (tap)="logout()"></ActionItem>
+</ActionBar>
+
+<StackLayout class="page">
+    <Image src="~/app/Mr_Logo.png" stretch="aspectFit"></Image>
+    <ListView [items]="movies">
+        <ng-template let-item="item">
+            <StackLayout>
+                <Label [nsRouterLink]="['/item', item.id]" [text]="item.title"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+    <Button text="Movie" (tap)="newMovie()"></Button>
+</StackLayout>

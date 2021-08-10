@@ -1,0 +1,9 @@
+.my-button {
+    android-elevation: 4;
+    background-color: lightseagreen;    
+    border-radius: 20;
+    border-width: 1;
+    color: whitesmoke;
+    font-size: 18;
+    font-weight: bold;
+}
